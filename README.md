@@ -1,4 +1,4 @@
-# Python project template
+# Snakemake Demo
 
-https://earthroverprogram.github.io/freyja/reproducibility/
+
 
