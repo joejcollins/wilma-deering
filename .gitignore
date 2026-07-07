@@ -248,3 +248,6 @@ acs-*.bib
 
 # changes
 *.soc
+
+.tests/*
+.snakemake

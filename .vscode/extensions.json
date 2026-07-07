@@ -3,6 +3,7 @@
         "charliermarsh.ruff",
         "ms-toolsai.jupyter",
         "ms-python.python",
+        "snakemake.snakemake-lang",
         "tamasfe.even-better-toml"
     ]
 }
