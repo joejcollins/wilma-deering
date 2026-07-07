@@ -22,7 +22,8 @@ dependencies = [
     "python-dotenv",
     "pyarrow",
     "polars",
-    "ruff"
+    "ruff",
+    "snakemake"
 ]
 
 [tool.pytest.ini_options]
