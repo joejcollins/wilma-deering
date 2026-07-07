@@ -1,0 +1,47 @@
+[project]
+name = "freyja"
+version = "0.0.1"
+description = ""
+authors = [ { name = "your name", email = "your.email@example.com" },]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.14"
+dependencies = [
+    "debugpy",
+    "dotenv",
+    "ipykernel",
+    "ipympl",
+    "matplotlib",
+    "mkdocs-mermaid2-plugin",
+    "mkdocs",
+    "pytest",
+    "python-dotenv",
+    "pyarrow",
+    "polars",
+    "ruff"
+]
+
+[tool.pytest.ini_options]
+log_cli = false
+addopts = "-q --disable-warnings --cache-clear"
+testpaths = ["./tests"]
+
+[tool.ruff]
+lint.select = ["F", "E", "W", "C90", "I", "PL", "D"]
+lint.ignore = ["D203", "D213"]
+lint.fixable = ["ALL"]
+line-length = 80
+
+[tool.uv]
+package = true
+
+[tool.pyright]
+exclude = ["**/__pycache__", "**/node_modules", "**/.*", ".venv"]
+reportMissingImports = true
+reportMissingTypeStubs = false
+pythonVersion = "3.14"
+pythonPlatform = "Linux"

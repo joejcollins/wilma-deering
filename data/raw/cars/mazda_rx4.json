@@ -1,0 +1,15 @@
+{
+  "am": 1,
+  "car": "Mazda RX4",
+  "carb": 4,
+  "cyl": 6,
+  "disp": 160,
+  "drat": 3.9,
+  "gear": 4,
+  "hp": 110,
+  "id": "eb7ebedc-aac8-494a-b7e6-b301b800d89e",
+  "mpg": 21,
+  "qsec": 16.46,
+  "vs": 0,
+  "wt": 2.62
+}

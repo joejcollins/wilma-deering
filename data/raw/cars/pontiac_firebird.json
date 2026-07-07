@@ -1,0 +1,15 @@
+{
+  "am": 0,
+  "car": "Pontiac Firebird",
+  "carb": 2,
+  "cyl": 8,
+  "disp": 400,
+  "drat": 3.08,
+  "gear": 3,
+  "hp": 175,
+  "id": "0cc79407-3433-4df6-9fd9-f8356320c538",
+  "mpg": 19.2,
+  "qsec": 17.05,
+  "vs": 0,
+  "wt": 3.845
+}

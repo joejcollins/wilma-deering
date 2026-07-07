@@ -1,0 +1,15 @@
+{
+  "am": 0,
+  "car": "Duster 360",
+  "carb": 4,
+  "cyl": 8,
+  "disp": 360,
+  "drat": 3.21,
+  "gear": 3,
+  "hp": 245,
+  "id": "bee672fd-0ef1-404b-bd7d-a51ed8d76af5",
+  "mpg": 14.3,
+  "qsec": 15.84,
+  "vs": 0,
+  "wt": 3.57
+}

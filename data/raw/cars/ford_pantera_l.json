@@ -1,0 +1,15 @@
+{
+  "am": 1,
+  "car": "Ford Pantera L",
+  "carb": 4,
+  "cyl": 8,
+  "disp": 351,
+  "drat": 4.22,
+  "gear": 5,
+  "hp": 264,
+  "id": "04899a29-d697-4b59-a72c-fc3d771a71b0",
+  "mpg": 15.8,
+  "qsec": 14.5,
+  "vs": 0,
+  "wt": 3.17
+}

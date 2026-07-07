@@ -1,0 +1,22 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.aux": true,
+    "**/*.nav": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/*.egg-info": true,
+    "**/*.pyc": true,
+    "**/*.out": true,
+    "**/*.snm": true,
+    "**/*.fls": true,
+  },
+  "python.languageServer": "Pylance",
+  "python.defaultInterpreterPath": ".venv/bin/python",
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+  "python.terminal.activateEnvironment": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+  },
+}

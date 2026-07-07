@@ -1,0 +1,18 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        "abcdefghijklmnopqrstuvwxyz",
+        "charliermarsh",
+        "debugpy",
+        "dotenv",
+        "Kedro",
+        "mypy",
+        "pycache",
+        "pyright",
+        "Snakemake",
+        "tamasfe",
+        "toolsai",
+        "venv"
+    ]
+}

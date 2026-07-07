@@ -1,0 +1,15 @@
+{
+  "am": 1,
+  "car": "Ferrari Dino",
+  "carb": 6,
+  "cyl": 6,
+  "disp": 145,
+  "drat": 3.62,
+  "gear": 5,
+  "hp": 175,
+  "id": "eb684411-09e1-47ab-b591-221ecb5dacfd",
+  "mpg": 19.7,
+  "qsec": 15.5,
+  "vs": 0,
+  "wt": 2.77
+}

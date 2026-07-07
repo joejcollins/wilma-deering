@@ -1,0 +1,15 @@
+{
+  "am": 1,
+  "car": "Maserati Bora",
+  "carb": 8,
+  "cyl": 8,
+  "disp": 301,
+  "drat": 3.54,
+  "gear": 5,
+  "hp": 335,
+  "id": "6019f423-202d-43b7-8b86-6dbf426fac01",
+  "mpg": 15,
+  "qsec": 14.6,
+  "vs": 0,
+  "wt": 3.57
+}

@@ -1,0 +1,15 @@
+{
+  "am": 0,
+  "car": "Lincoln Continental",
+  "carb": 4,
+  "cyl": 8,
+  "disp": 460,
+  "drat": 3,
+  "gear": 3,
+  "hp": 215,
+  "id": "52541a5d-6df2-4225-b0c9-7b89efc7e707",
+  "mpg": 10.4,
+  "qsec": 17.82,
+  "vs": 0,
+  "wt": 5.424
+}

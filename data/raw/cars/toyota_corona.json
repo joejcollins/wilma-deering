@@ -1,0 +1,15 @@
+{
+  "am": 0,
+  "car": "Toyota Corona",
+  "carb": 1,
+  "cyl": 4,
+  "disp": 120.1,
+  "drat": 3.7,
+  "gear": 3,
+  "hp": 97,
+  "id": "d87c783e-cb8e-413f-b96d-2d14e0e7b28a",
+  "mpg": 21.5,
+  "qsec": 20.01,
+  "vs": 1,
+  "wt": 2.465
+}
