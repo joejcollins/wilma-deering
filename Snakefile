@@ -3,6 +3,10 @@ RAW_DATA_DIR = "data/raw/cars"
 INTERIM_DIR = "data/refined/cars"
 PROCESSED_DIR = "data/wrapped/cars"
 
+import pathlib
+
+import my_pkg
+
 rule all:
     input:
         f"{PROCESSED_DIR}/mtcars.parquet"
@@ -10,7 +14,7 @@ rule all:
 rule make_interim:
     input:
         # Trigger on the raw directory contents so reruns happen when JSON files change.
-        directory(RAW_DATA_DIR)
+        pathlib.Path(my_pkg.config.RAW_DATA_DIR) / "cars"
     output:
         f"{INTERIM_DIR}/01_mtcars.csv"
     shell:

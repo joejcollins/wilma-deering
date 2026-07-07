@@ -3,7 +3,7 @@
 import csv
 import pathlib
 
-import config
+from my_pkg import config
 
 
 def extract_manufacturer(car_name: str) -> str:

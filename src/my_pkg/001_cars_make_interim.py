@@ -4,7 +4,7 @@ import csv
 import json
 import pathlib
 
-import config
+from my_pkg import config
 
 
 def main() -> None:

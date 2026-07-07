@@ -3,7 +3,7 @@
 import csv
 import pathlib
 
-import config
+from my_pkg import config
 
 
 def hp_to_weight_ratio(hp_value: str, wt_value: str) -> str:

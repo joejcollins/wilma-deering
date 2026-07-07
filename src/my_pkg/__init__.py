@@ -1,3 +1,3 @@
-"""my_pkg package."""
+"""Package."""
 
-__all__ = []
+from . import config  # noqa: F401

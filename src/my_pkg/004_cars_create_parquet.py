@@ -5,7 +5,7 @@ import pathlib
 import pyarrow.csv as pv
 import pyarrow.parquet as pq
 
-import config
+from my_pkg import config
 
 
 def main() -> None:
