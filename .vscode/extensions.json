@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "charliermarsh.ruff",
+        "james-yu.latex-workshop",
         "ms-toolsai.jupyter",
         "ms-python.python",
         "snakemake.snakemake-lang",

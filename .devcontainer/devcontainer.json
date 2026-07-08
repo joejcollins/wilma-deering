@@ -12,6 +12,7 @@
 			},
 			"extensions": [
 				"charliermarsh.ruff",
+				"james-yu.latex-workshop",
 				"ms-toolsai.jupyter",
 				"ms-python.python",
 				"tamasfe.even-better-toml"
