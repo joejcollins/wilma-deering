@@ -10,40 +10,50 @@ import pathlib
 
 import my_pkg
 
+from my_pkg.cars import additional_features
+
 RAW_JSONS = glob_wildcards(f"{RAW_DATA_DIR}/{{name}}.json").name
 
-rule all:
+rule add_features:
     input:
-        f"{PROCESSED_DIR}/mtcars.parquet"
-
-rule make_interim:
-    input:
-        expand(f"{RAW_DATA_DIR}/{{name}}.json", name=RAW_JSONS)
-    output:
-        f"{INTERIM_DIR}/01_mtcars.csv"
-    script:
-        "./src/my_pkg/001_cars_make_interim.py"
-
-rule add_manufacturer:
-    input:
-        f"{INTERIM_DIR}/01_mtcars.csv"
-    output:
-        f"{INTERIM_DIR}/02_mtcars_with_manufacturer.csv"
-    script:
-        "./src/my_pkg/002_cars_add_manufacturer.py"
-
-rule add_ratio:
-    input:
-        f"{INTERIM_DIR}/02_mtcars_with_manufacturer.csv"
-    output:
-        f"{INTERIM_DIR}/03_mtcars_with_manufacturer_and_ratio.csv"
-    script:
-        "./src/my_pkg/003_cars_add_hp_wt_ratio.py"
-
-rule create_parquet:
-    input:
-        f"{INTERIM_DIR}/03_mtcars_with_manufacturer_and_ratio.csv"
+        f"{RAW_DATA_DIR}/mtcars.json"
     output:
         f"{PROCESSED_DIR}/mtcars.parquet"
-    script:
-        "./src/my_pkg/004_cars_create_parquet.py"
+    run:
+        additional_features.add_features(pathlib.Path(f"{RAW_DATA_DIR}/mtcars.json"), pathlib.Path(f"{PROCESSED_DIR}/mtcars.parquet"))
+
+# rule all:
+#     input:
+#         f"{PROCESSED_DIR}/mtcars.parquet"
+
+# rule make_interim:
+#     input:
+#         expand(f"{RAW_DATA_DIR}/{{name}}.json", name=RAW_JSONS)
+#     output:
+#         f"{INTERIM_DIR}/01_mtcars.csv"
+#     script:
+#         "./src/my_pkg/001_cars_make_interim.py"
+
+# rule add_manufacturer:
+#     input:
+#         f"{INTERIM_DIR}/01_mtcars.csv"
+#     output:
+#         f"{INTERIM_DIR}/02_mtcars_with_manufacturer.csv"
+#     run:
+#         "./src/my_pkg/002_cars_add_manufacturer.py"
+
+# rule add_ratio:
+#     input:
+#         f"{INTERIM_DIR}/02_mtcars_with_manufacturer.csv"
+#     output:
+#         f"{INTERIM_DIR}/03_mtcars_with_manufacturer_and_ratio.csv"
+#     script:
+#         "./src/my_pkg/003_cars_add_hp_wt_ratio.py"
+
+# rule create_parquet:
+#     input:
+#         f"{INTERIM_DIR}/03_mtcars_with_manufacturer_and_ratio.csv"
+#     output:
+#         f"{PROCESSED_DIR}/mtcars.parquet"
+#     script:
+#         "./src/my_pkg/004_cars_create_parquet.py"
