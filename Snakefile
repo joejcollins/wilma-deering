@@ -12,14 +12,14 @@ import my_pkg
 
 from my_pkg.cars import additional_features
 
-RAW_JSONS = glob_wildcards(f"{RAW_DATA_DIR}/{{name}}.json").name
+RAW_JSONS = glob_wildcards(f"{my_pkg.config.RAW_DATA_DIR}/{{name}}.json").name
 
 rule add_features:
     input:
         f"{RAW_DATA_DIR}/mtcars.json"
     output:
         f"{PROCESSED_DIR}/mtcars.parquet"
-    run:
+    script:
         additional_features.add_features(pathlib.Path(f"{RAW_DATA_DIR}/mtcars.json"), pathlib.Path(f"{PROCESSED_DIR}/mtcars.parquet"))
 
 # rule all:

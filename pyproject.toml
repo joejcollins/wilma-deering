@@ -26,6 +26,9 @@ dependencies = [
     "snakemake"
 ]
 
+[project.scripts]
+aggregate = "my_pkg.cli:app"
+
 [tool.pytest.ini_options]
 log_cli = false
 addopts = "-q --disable-warnings --cache-clear"
