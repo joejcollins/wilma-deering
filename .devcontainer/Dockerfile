@@ -16,7 +16,6 @@ ENV UV_CACHE_DIR=/opt/uv-cache \
     UV_LINK_MODE=copy
 WORKDIR /app
 COPY pyproject.toml uv.lock ./
-COPY scaffold ./scaffold
 RUN uv sync --locked --no-install-project \
     && uv cache prune --ci
 RUN chmod -R 777 /opt/uv-cache
@@ -26,8 +25,6 @@ ENV UV_CACHE_DIR=/opt/uv-cache \
     PIP_NO_CACHE_DIR=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
-
-WORKDIR /workspace
 
 # Add some labels so it looks nice in Github packages.
 LABEL org.opencontainers.image.source=https://github.com/joejcollins/wilma-deering/
