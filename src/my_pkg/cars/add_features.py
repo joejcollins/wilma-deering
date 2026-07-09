@@ -25,3 +25,17 @@ def add_guid(car: dict) -> dict:
     car_with_guid = car.copy()
     car_with_guid["guid"] = str(uuid_extensions.uuid7())
     return car_with_guid
+
+
+def add_manufacturer(car: dict) -> dict:
+    """Pure function: add manufacturer to car data."""
+    car_with_manufacturer = car.copy()
+    car_with_manufacturer["manufacturer"] = extract_manufacturer(
+        car.get("name", "")
+    )
+    return car_with_manufacturer
+
+
+def extract_manufacturer(car_name: str) -> str:
+    """Extract the manufacturer from the first word of a car name."""
+    return car_name.strip().split()[0] if car_name else ""
