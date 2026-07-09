@@ -2,8 +2,6 @@
 
 import my_pkg
 
-from my_pkg.cars import add_guid
-
 
 CARS, = glob_wildcards(f"{my_pkg.config.RAW_DATA_DIR}/cars/{{car}}.json")
 

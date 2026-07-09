@@ -8,9 +8,7 @@ from my_pkg import config
 
 def extract_manufacturer(car_name: str) -> str:
     """Extract the manufacturer from the first word of a car name."""
-    if not car_name:
-        return ""
-    return car_name.strip().split()[0]
+    return car_name.strip().split()[0] if car_name else ""
 
 
 def main() -> None:

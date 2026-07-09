@@ -11,6 +11,7 @@
         "Kedro",
         "matplotlib",
         "mkdocs",
+        "mtcars",
         "mypy",
         "pathlib",
         "pycache",

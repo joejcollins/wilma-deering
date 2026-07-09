@@ -28,6 +28,9 @@ lock:  # Create or update the requirements file.
 publish:  # Publish the documentation to Github pages.
 	.venv/bin/mkdocs gh-deploy --force --verbose
 
+snake:	# Run the snakemake pipeline.
+	.venv/bin/snakemake --cores 1
+
 test:  # Run the unit tests.
 	.venv/bin/pytest ./tests --verbose --color=yes
 
