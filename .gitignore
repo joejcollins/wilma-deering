@@ -251,3 +251,4 @@ acs-*.bib
 
 .tests/*
 .snakemake
+data/refined/*

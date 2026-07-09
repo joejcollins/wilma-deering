@@ -1,28 +1,37 @@
-# ruff: noqa
-# pyright: ignore
 # Snakemake DSL file - not valid Python syntax for type checkers
-
-
-SRC_DIR = "src"
-RAW_DATA_DIR = "data/raw/cars"
-INTERIM_DIR = "data/refined/cars"
-PROCESSED_DIR = "data/wrapped/cars"
-
-import pathlib
 
 import my_pkg
 
-from my_pkg.cars import additional_features
+from my_pkg.cars import add_guid
 
-RAW_JSONS = glob_wildcards(f"{my_pkg.config.RAW_DATA_DIR}/{{name}}.json").name
 
-rule add_features:
+CARS, = glob_wildcards(f"{my_pkg.config.RAW_DATA_DIR}/cars/{{car}}.json")
+
+print(CARS)
+
+rule all:
     input:
-        f"{RAW_DATA_DIR}/mtcars.json"
+        expand(
+            f"{my_pkg.config.INTERIM_DATA_DIR}/cars/002_sorted_json/{{car}}.json",
+            car=CARS
+        )
+
+
+rule add_guid:
+    input:
+        f"{my_pkg.config.RAW_DATA_DIR}/cars/{{car}}.json"
     output:
-        f"{PROCESSED_DIR}/mtcars.parquet"
-    run:
-        additional_features.add_features(pathlib.Path(f"{RAW_DATA_DIR}/mtcars.json"), pathlib.Path(f"{PROCESSED_DIR}/mtcars.parquet"))
+        f"{my_pkg.config.INTERIM_DATA_DIR}/cars/001_guid/{{car}}.json"
+    shell:
+        "cars add-guid-to-cars {input} {output}"
+
+rule sort_and_format:
+    input:
+        f"{my_pkg.config.INTERIM_DATA_DIR}/cars/001_guid/{{car}}.json"
+    output:
+        f"{my_pkg.config.INTERIM_DATA_DIR}/cars/002_sorted_json/{{car}}.json"
+    shell:
+        "jq --sort-keys '.' {input} > {output}"
 
 # rule all:
 #     input:

@@ -16,6 +16,17 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${file}"
+        },        {
+            "name": "Debug Snakemake",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "snakemake",
+            "args": [
+                "--cores",
+                "1"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
         }
     ]
 }

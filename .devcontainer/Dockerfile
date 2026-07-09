@@ -6,7 +6,7 @@ RUN curl -LsSf https://astral.sh/uv/install.sh | sh \
 
 # Install updates and utilities
 RUN sudo apt-get update \
-    && sudo apt-get install --assume-yes python3-dev texlive-latex-extra texlive-extra-utils latexmk tex-fmt \
+    && sudo apt-get install --assume-yes python3-dev texlive-latex-extra texlive-extra-utils latexmk tex-fmt jq \
     && apt clean \
     && rm -rf /var/lib/apt/lists/*
 

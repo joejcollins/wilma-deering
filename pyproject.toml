@@ -23,11 +23,13 @@ dependencies = [
     "pyarrow",
     "polars",
     "ruff",
-    "snakemake"
+    "snakemake",
+    "typer",
+    "uuid7"
 ]
 
 [project.scripts]
-aggregate = "my_pkg.cli:app"
+cars = "my_pkg.cli:app"
 
 [tool.pytest.ini_options]
 log_cli = false
