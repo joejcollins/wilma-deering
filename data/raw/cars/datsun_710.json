@@ -1,15 +1,14 @@
 {
-  "am": 1,
   "car": "Datsun 710",
-  "carb": 1,
+  "mpg": 22.8,
   "cyl": 4,
   "disp": 108,
-  "drat": 3.85,
-  "gear": 4,
   "hp": 93,
-  "id": "dd6aca5b-f4d2-40a1-857a-84883da417e8",
-  "mpg": 22.8,
+  "drat": 3.85,
+  "wt": 2.32,
   "qsec": 18.61,
   "vs": 1,
-  "wt": 2.32
+  "am": 1,
+  "gear": 4,
+  "carb": 1
 }

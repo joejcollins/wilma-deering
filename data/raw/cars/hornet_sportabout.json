@@ -1,15 +1,14 @@
 {
-  "am": 0,
   "car": "Hornet Sportabout",
-  "carb": 2,
+  "mpg": 18.7,
   "cyl": 8,
   "disp": 360,
-  "drat": 3.15,
-  "gear": 3,
   "hp": 175,
-  "id": "1912be09-527b-4f54-a165-b32dee7b3c76",
-  "mpg": 18.7,
+  "drat": 3.15,
+  "wt": 3.44,
   "qsec": 17.02,
   "vs": 0,
-  "wt": 3.44
+  "am": 0,
+  "gear": 3,
+  "carb": 2
 }

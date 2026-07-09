@@ -1,15 +1,14 @@
 {
-  "am": 0,
   "car": "Merc 450SLC",
-  "carb": 3,
+  "mpg": 15.2,
   "cyl": 8,
   "disp": 275.8,
-  "drat": 3.07,
-  "gear": 3,
   "hp": 180,
-  "id": "92fbc730-6f15-411a-a7aa-3692ec3b213e",
-  "mpg": 15.2,
+  "drat": 3.07,
+  "wt": 3.78,
   "qsec": 18,
   "vs": 0,
-  "wt": 3.78
+  "am": 0,
+  "gear": 3,
+  "carb": 3
 }

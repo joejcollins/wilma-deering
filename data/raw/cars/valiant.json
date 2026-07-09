@@ -1,15 +1,14 @@
 {
-  "am": 0,
   "car": "Valiant",
-  "carb": 1,
+  "mpg": 18.1,
   "cyl": 6,
   "disp": 225,
-  "drat": 2.76,
-  "gear": 3,
   "hp": 105,
-  "id": "a9390c25-dcaa-4461-8e4f-a033a43ff386",
-  "mpg": 18.1,
+  "drat": 2.76,
+  "wt": 3.46,
   "qsec": 20.22,
   "vs": 1,
-  "wt": 3.46
+  "am": 0,
+  "gear": 3,
+  "carb": 1
 }

@@ -1,15 +1,14 @@
 {
-  "am": 0,
   "car": "Cadillac Fleetwood",
-  "carb": 4,
+  "mpg": 10.4,
   "cyl": 8,
   "disp": 472,
-  "drat": 2.93,
-  "gear": 3,
   "hp": 205,
-  "id": "b9b84071-49ec-4d19-b80d-42562e60b13f",
-  "mpg": 10.4,
+  "drat": 2.93,
+  "wt": 5.25,
   "qsec": 17.98,
   "vs": 0,
-  "wt": 5.25
+  "am": 0,
+  "gear": 3,
+  "carb": 4
 }

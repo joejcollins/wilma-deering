@@ -1,15 +1,14 @@
 {
-  "am": 0,
   "car": "Dodge Challenger",
-  "carb": 2,
+  "mpg": 15.5,
   "cyl": 8,
   "disp": 318,
-  "drat": 2.76,
-  "gear": 3,
   "hp": 150,
-  "id": "45b5a034-c88b-47e8-b971-36533bc86d78",
-  "mpg": 15.5,
+  "drat": 2.76,
+  "wt": 3.52,
   "qsec": 16.87,
   "vs": 0,
-  "wt": 3.52
+  "am": 0,
+  "gear": 3,
+  "carb": 2
 }

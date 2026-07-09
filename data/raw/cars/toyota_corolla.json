@@ -1,15 +1,14 @@
 {
-  "am": 1,
   "car": "Toyota Corolla",
-  "carb": 1,
+  "mpg": 33.9,
   "cyl": 4,
   "disp": 71.1,
-  "drat": 4.22,
-  "gear": 4,
   "hp": 65,
-  "id": "42d9bb66-5603-4d0b-b16a-4b1888e0e19a",
-  "mpg": 33.9,
+  "drat": 4.22,
+  "wt": 1.835,
   "qsec": 19.9,
   "vs": 1,
-  "wt": 1.835
+  "am": 1,
+  "gear": 4,
+  "carb": 1
 }

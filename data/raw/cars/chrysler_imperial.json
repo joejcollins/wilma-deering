@@ -1,15 +1,14 @@
 {
-  "am": 0,
   "car": "Chrysler Imperial",
-  "carb": 4,
+  "mpg": 14.7,
   "cyl": 8,
   "disp": 440,
-  "drat": 3.23,
-  "gear": 3,
   "hp": 230,
-  "id": "31c737bb-3370-4a00-9307-1efe5f7948e8",
-  "mpg": 14.7,
+  "drat": 3.23,
+  "wt": 5.345,
   "qsec": 17.42,
   "vs": 0,
-  "wt": 5.345
+  "am": 0,
+  "gear": 3,
+  "carb": 4
 }

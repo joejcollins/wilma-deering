@@ -1,15 +1,14 @@
 {
-  "am": 0,
   "car": "Merc 450SE",
-  "carb": 3,
+  "mpg": 16.4,
   "cyl": 8,
   "disp": 275.8,
-  "drat": 3.07,
-  "gear": 3,
   "hp": 180,
-  "id": "945849ae-f5e1-4b5e-8b03-3b626a4bbe8b",
-  "mpg": 16.4,
+  "drat": 3.07,
+  "wt": 4.07,
   "qsec": 17.4,
   "vs": 0,
-  "wt": 4.07
+  "am": 0,
+  "gear": 3,
+  "carb": 3
 }

@@ -1,15 +1,14 @@
 {
-  "am": 1,
   "car": "Fiat 128",
-  "carb": 1,
+  "mpg": 32.4,
   "cyl": 4,
   "disp": 78.7,
-  "drat": 4.08,
-  "gear": 4,
   "hp": 66,
-  "id": "4a2f4f51-5bdf-42c8-a081-2da49dcdd0d7",
-  "mpg": 32.4,
+  "drat": 4.08,
+  "wt": 2.2,
   "qsec": 19.47,
   "vs": 1,
-  "wt": 2.2
+  "am": 1,
+  "gear": 4,
+  "carb": 1
 }

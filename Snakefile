@@ -1,5 +1,7 @@
+# ruff: noqa
 # pyright: ignore
 # Snakemake DSL file - not valid Python syntax for type checkers
+
 
 SRC_DIR = "src"
 RAW_DATA_DIR = "data/raw/cars"
@@ -19,7 +21,7 @@ rule add_features:
         f"{RAW_DATA_DIR}/mtcars.json"
     output:
         f"{PROCESSED_DIR}/mtcars.parquet"
-    script:
+    run:
         additional_features.add_features(pathlib.Path(f"{RAW_DATA_DIR}/mtcars.json"), pathlib.Path(f"{PROCESSED_DIR}/mtcars.parquet"))
 
 # rule all:

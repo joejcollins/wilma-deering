@@ -1,15 +1,14 @@
 {
-  "am": 1,
   "car": "Porsche 914-2",
-  "carb": 2,
+  "mpg": 26,
   "cyl": 4,
   "disp": 120.3,
-  "drat": 4.43,
-  "gear": 5,
   "hp": 91,
-  "id": "6566bcc2-b5cc-472d-bb08-a54f67536e5e",
-  "mpg": 26,
+  "drat": 4.43,
+  "wt": 2.14,
   "qsec": 16.7,
   "vs": 0,
-  "wt": 2.14
+  "am": 1,
+  "gear": 5,
+  "carb": 2
 }
