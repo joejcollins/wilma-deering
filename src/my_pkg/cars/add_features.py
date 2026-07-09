@@ -31,7 +31,7 @@ def add_manufacturer(car: dict) -> dict:
     """Pure function: add manufacturer to car data."""
     car_with_manufacturer = car.copy()
     car_with_manufacturer["manufacturer"] = extract_manufacturer(
-        car.get("name", "")
+        car.get("car", "")
     )
     return car_with_manufacturer
 
