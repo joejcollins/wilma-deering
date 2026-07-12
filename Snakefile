@@ -9,11 +9,11 @@ print(CARS)
 
 rule all:
     input:
+        "reports/cars_report.pdf",
         expand(
             f"{my_pkg.config.INTERIM_DATA_DIR}/cars/003_sorted_json/{{car}}.json",
             car=CARS
         )
-
 
 rule add_guid:
     input:
@@ -38,3 +38,18 @@ rule sort_and_format:
         f"{my_pkg.config.INTERIM_DATA_DIR}/cars/003_sorted_json/{{car}}.json"
     shell:
         "jq --sort-keys '.' {input} > {output}"
+
+rule build_pdf:
+    input:
+        tex="latex/reports/cars_report.tex",
+        figures=directory("latex/reports/figures")  # Re-runs pdf build if figures change
+    output:
+        pdf="latex/reports/cars_report.pdf"
+    shell:
+        """
+        docker run --rm \
+          -v "${{PWD}}:/workspace" \
+          -w "/workspace/latex/reports" \
+          ghcr.io/earthroverprogram/bragi:latest \
+          pdflatex cars_report.tex
+        """
