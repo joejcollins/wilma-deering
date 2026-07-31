@@ -10,6 +10,7 @@
 			"extensions": [
 				"charliermarsh.ruff",
 				"james-yu.latex-workshop",
+				"mechatroner.rainbow-csv",
 				"ms-toolsai.jupyter",
 				"ms-python.python",
 				"tamasfe.even-better-toml"
