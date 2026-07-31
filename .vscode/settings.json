@@ -15,6 +15,7 @@
   "python.defaultInterpreterPath": ".venv/bin/python",
   "python.testing.autoTestDiscoverOnSaveEnabled": true,
   "python.terminal.activateEnvironment": true,
+  "files.eol": "\n",
   "[python]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
