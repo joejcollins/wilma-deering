@@ -1,0 +1,9 @@
+id,uuid,is_accepted,note
+Merc 230,019fbd8c-3f28-7484-b191-43eafd9f3f74,TRUE,
+Merc 240D,019fbd8c-3f28-7484-b191-477213fd08bb,TRUE,
+Merc 280,019fbd8c-3f28-7484-b191-48fdc1c76d15,TRUE,
+Merc 280A,019fbd8c-3f28-7484-b191-4cfafa85fcc7,FALSE,Something went wrong
+Merc 280C,019fbd8c-3f28-7484-b191-53b6f46717f3,TRUE,this is the right one
+Merc 450SE,019fbd8c-3f28-7484-b191-55b5528d3c9e,TRUE,
+Merc 450SL,019fbd8c-3f28-7484-b191-5a406acd1de0,TRUE,
+Merc 450SLC,019fbd8c-c265-7464-9ccb-97801bb74048,TRUE,

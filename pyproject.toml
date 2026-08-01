@@ -1,9 +1,9 @@
 [project]
-name = "freyja"
+name = "wilma-deering"
 version = "0.0.1"
 description = ""
-authors = [ { name = "your name", email = "your.email@example.com" },]
-license = { file = "LICENSE" }
+authors = [ { name = "Joe J Collins", email = "joejcollins@gmail.com" },]
+license = { text = "MIT" }
 readme = "README.md"
 classifiers = [
     "Programming Language :: Python :: 3",
