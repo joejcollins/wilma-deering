@@ -1,0 +1,9 @@
+{
+  "miles_per_gallon": "mpg",
+  "cylinders": "cyl",
+  "displacement": "disp",
+  "horsepower": "hp",
+  "rear_axle_ratio": "drat",
+  "weight": "wt",
+  "quarter_mile_time": "qsec"
+}

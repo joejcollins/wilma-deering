@@ -1,4 +1,4 @@
-"car","milespergallon","cylinders","disp","hp","drat","wt","qsec","vs","am","gears","carb"
+"car","milespergallon","cylinders","displacement","horsepower","rear_axle_ratio","weight","quarter_mile_time","vs","am","gears","carb"
 "Merc 230",22.8,4,140.8,95,3.92,3.15,22.9,1,0,4,2
 "Merc 240D",24.4,4,146.7,62,3.69,3.19,20,1,0,4,2
 "Merc 280",19.2,6,167.6,123,3.92,3.44,18.3,1,0,4,4
